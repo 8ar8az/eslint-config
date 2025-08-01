@@ -56,6 +56,7 @@ export default tseslint.config({
       },
     ],
     '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
+    '@stylistic/padded-blocks': ['error', 'never'],
 
     '@typescript-eslint/prefer-regexp-exec': 'off',
     '@typescript-eslint/consistent-indexed-object-style': 'off',
