@@ -1,0 +1,30 @@
+{
+  "name": "@8ar8az/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint shareable config",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "license": "MIT",
+  "author": "Nikita Mokrous <8ar8az@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.32.0",
+    "@stylistic/eslint-plugin": "^5.2.2",
+    "eslint-plugin-import": "^2.32.0",
+    "typescript-eslint": "^8.38.0"
+  },
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  }
+}
