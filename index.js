@@ -1,6 +1,6 @@
 import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import importPlugin from 'eslint-plugin-import';
+import { importX } from 'eslint-plugin-import-x';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config({
@@ -11,8 +11,8 @@ export default tseslint.config({
     stylistic.configs.customize({ semi: true, arrowParens: true, braceStyle: '1tbs' }),
     tseslint.configs.strictTypeChecked,
     tseslint.configs.stylisticTypeChecked,
-    importPlugin.flatConfigs.recommended,
-    importPlugin.flatConfigs.typescript,
+    importX.flatConfigs.recommended,
+    importX.flatConfigs.typescript,
   ],
 
   linterOptions: {
@@ -61,9 +61,10 @@ export default tseslint.config({
     '@typescript-eslint/prefer-regexp-exec': 'off',
     '@typescript-eslint/consistent-indexed-object-style': 'off',
 
-    'import/prefer-default-export': 'off',
-    'import/no-default-export': 'error',
-    'import/order': [
+    'import-x/prefer-default-export': 'off',
+    'import-x/no-default-export': 'warn',
+    'import-x/no-named-export': 'off',
+    'import-x/order': [
       'error',
       {
         'newlines-between': 'always',
@@ -79,6 +80,6 @@ export default tseslint.config({
         ],
       },
     ],
-    'import/newline-after-import': 'error',
+    'import-x/newline-after-import': 'error',
   },
 });
